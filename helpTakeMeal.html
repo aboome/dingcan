@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhan"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>代取餐</title>
+		<link rel="stylesheet" href="dist/style/weui.css"/>
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" href="css/dinner.css" />
+		<link rel="stylesheet" href="css/outskirtsDinner.css" />
+		<link rel="stylesheet" href="css/helpTakeMeal.css" />
+		<link rel="stylesheet" href="css/festivalDinner.css" />
+		<link rel="stylesheet" href="css/offcanvas.min.css" />
+	</head>
+	<body>
+		<div class="overlay"></div>
+		
+		<div class="d_header">
+			<p class="helpMealType">餐次：<span class="">午餐</span></p>
+		</div>
+		<div class="addHelpPerson">
+			<a href="javascript:;" id="helpPerson" data-toggle="offcanvas">
+				添加代领人员
+			</a>
+		</div>
+		
+		<div class="d_content">
+			<h5 class="d_content_title">
+				<p class="d_rili">
+					<img src="img/calendar.png" />
+				</p>
+				<div class="d_p">
+					<p class="d_date">2016-01-18</p>
+					<p class="d_week">代领人员</p>
+				</div>
+			</h5>
+			<div class="d_table">
+				<div class="d_title clearfix">
+					<div class="d_td_3">工号</div>
+					<div class="d_td_3">姓名</div>
+					<div class="d_td_3">部门</div>
+					<div class="d_td_3"></div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<p class="mealType jobNum">20156352</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType name">李大鹏</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType department">国际业务部</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType">
+							<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_warn">删除</a>
+						</p>
+					</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<p class="mealType jobNum">20156352</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType name">李大鹏</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType department">国际业务部</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType">
+							<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_warn">删除</a>
+						</p>
+					</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<p class="mealType jobNum">20156352</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType name">李大鹏</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType department">国际业务部</p>
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType">
+							<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_warn">删除</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--youhua-->
+			<div id="navbar" class="navbar-collapse add_person_list none">
+		        <div class="weui-search-bar" id="searchBar">
+		            <form class="weui-search-bar__form">
+		                <div class="weui-search-bar__box">
+		                    <i class="weui-icon-search"></i>
+		                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required/>
+		                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+		                </div>
+		                <label class="weui-search-bar__label" id="searchText">
+		                    <i class="weui-icon-search"></i>
+		                    <span>搜索</span>
+		                </label>
+		            </form>
+		            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+		        </div>
+		        <div class="weui-search-bar weui-cell z-select-bar">
+		        	<div class="weui-cell__hd">
+		        		<label class="weui-label" for="department">部门:</label>
+		        	</div>
+		        	<div class="weui-cell__bd">
+		        		<select class="weui-select" id="department">
+						  <option value ="">请选择部门</option>
+						  <option value ="0">人力资源部</option>
+						  <option value="1">国际营销部</option>
+						  <option value="2">技术支持部</option>
+						</select>
+		        	</div>
+		        	
+		        </div>
+		        
+		        <div class="weui-cells weui-cells_checkbox">
+		            <label class="weui-cell weui-check__label" for="s11">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>张静</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s12">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s13">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s13">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s14">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s14">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s15">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s15">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s16">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s16">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s17">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s17">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s18">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s18">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s19">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s19">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s20">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s20">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s21">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s21">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		            <label class="weui-cell weui-check__label" for="s22">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="checkbox1" class="weui-check" id="s22">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>王欣</p>
+		                </div>
+		            </label>
+		        </div>
+		        
+		        <div class="button-sp-area">
+		        	<a href="javascript:;" class="z-btn">添加</a>
+		        	<a href="javascript:;" class="z-btn" id="cancel">取消</a>
+		        </div>
+			</div>
+			
+		</div>
+		<div class="d_content">
+			<h5 class="d_content_title">
+				<p class="d_rili">
+					<img src="img/calendar.png" />
+				</p>
+				<div class="d_p">
+					<p class="d_date">2016-01-18</p>
+					<p class="d_week">客餐代领</p>
+				</div>
+			</h5>
+			<div class="d_table">
+				<div class="d_title clearfix">
+					<div class="d_td_6">餐类</div>
+					<div class="d_td_6">数量</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_6">
+						<p class="mealType passengerMeal">客餐</p>
+					</div>
+					<div class="d_td d_td_6">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="passengerPerson">
+			<p>代领人：<span class="passengerMealPerson">李丽</span></p>
+		</div>
+		
+		<div class="d_footer">
+			<a href="javascript:;" class="weui-btn weui-btn_primary">提交订餐</a>
+		</div>
+		
+		<div class="d_footer">
+			<p class="tips">
+			提示：提交代领成功。您可在09：00-10：00时间段内在本页面进行修改并重新提交！
+		</div>
+	</body>
+	<script type="text/javascript" src="dist/jquery-2.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/offcanvas.js" ></script>
+	<script type="text/javascript">
+	    $(function(){
+	        var $searchBar = $('#searchBar'),
+	            $searchResult = $('#searchResult'),
+	            $searchText = $('#searchText'),
+	            $searchInput = $('#searchInput'),
+	            $searchClear = $('#searchClear'),
+	            $searchCancel = $('#searchCancel');
+	
+	        function hideSearchResult(){
+	            $searchResult.hide();
+	            $searchInput.val('');
+	        }
+	        function cancelSearch(){
+	            hideSearchResult();
+	            $searchBar.removeClass('weui-search-bar_focusing');
+	            $searchText.show();
+	        }
+	
+	        $searchText.on('click', function(){
+	            $searchBar.addClass('weui-search-bar_focusing');
+	            $searchInput.focus();
+	        });
+	        $searchInput
+	            .on('blur', function () {
+	                if(!this.value.length) cancelSearch();
+	            })
+	            .on('input', function(){
+	                if(this.value.length) {
+	                    $searchResult.show();
+	                } else {
+	                    $searchResult.hide();
+	                }
+	            })
+	        ;
+	        $searchClear.on('click', function(){
+	            hideSearchResult();
+	            $searchInput.focus();
+	        });
+	        $searchCancel.on('click', function(){
+	            cancelSearch();
+	            $searchInput.blur();
+	        });
+	        
+	        
+	        $('[data-toggle="offcanvas"]').click(function () {
+		        $('#navbar').removeClass('none');
+		        $("body,html").css({"overflow":"hidden"});  
+    		});
+    		
+	        $('.overlay').click(function () {
+	        	$('#navbar').addClass('none');
+	        	$("body,html").css({"overflow":"auto"}); 
+		    });
+		    
+		    $('#cancel').click(function () {
+	        	$('#navbar').addClass('none');
+	        	$('.overlay').removeClass('active');
+	        	$("body,html").css({"overflow":"auto"}); 
+		    });
+	        
+	        $('.plus').click(function(){
+	        	var num = $(this).parents('.count').find('input[type="number"]').val();
+	        	num++;
+	        	$(this).parents('.count').find('input[type="number"]').val(num);
+	        });
+	        $('.minus').click(function(){
+	        	var num = $(this).parents('.count').find('input[type="number"]').val();
+	        	if(num > 0){
+	        		num--;
+	        	}
+	        	$(this).parents('.count').find('input[type="number"]').val(num);
+	        });
+	    });
+	</script>
+</html>

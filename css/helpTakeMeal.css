@@ -1,0 +1,48 @@
+.d_td_3{
+	width: 25% !important;
+}
+.mealType{
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis; 
+}
+.addHelpPerson{
+	height: 4em;
+	line-height: 5em;
+	text-align: center;
+}
+.addHelpPerson a{
+	color: #1AAD19;
+	font-size: 1.6rem;
+}
+.d_header{
+	height: 6em;
+	padding-top: 3em;
+}
+.helpMealType{
+	padding: 0.4em 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.z-select-bar{
+	width: 100%;
+	padding: 8px 10px 0 10px;
+	position: fixed;
+	top: 44px;
+	background: #1AAD19;
+	z-index:1000;
+}
+.weui-label{
+	width: 46px;	
+}
+.weui-select{
+	background-color: #FFFFFF;
+	height: 30px;
+	line-height: 30px;
+	color: #9B9B9B;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	border-radius: 3px;
+}

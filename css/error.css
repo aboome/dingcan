@@ -1,0 +1,22 @@
+.d_content{
+	color: #676A6C;
+	text-align: center;
+	margin-top: 30px;
+}
+.d_content h1{
+	font-family: inherit;
+	font-size: 12rem;
+	font-weight: 100;
+}
+.font-bold{
+	font-weight: 600;
+	font-size: 2rem;
+}
+.backIndex{
+	width: 80px;
+	margin: 20px auto;
+}
+
+.backIndex .weui-btn{
+	line-height: 2;
+}

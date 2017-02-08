@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhan"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>日常订餐</title>
+		<link rel="stylesheet" href="dist/style/weui.css"/>
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" href="css/dinner.css" />
+	</head>
+	<body>
+		<div class="weui-cells weui-cells_form d_header">
+			<div class="weui-cell">
+                <div class="weui-cell__hd"><label for="startTime" class="weui-label d_label">开始时间：</label></div>
+                <div class="weui-cell__bd d_input">
+                    <input class="weui-input timePic" id="startTime" type="date" value="请选择开始时间" placeholder="请选择开始时间"/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="endTime" class="weui-label d_label">结束时间：</label></div>
+                <div class="weui-cell__bd d_input">
+                    <input class="weui-input timePic" id="endTime" type="date" value="请选择结束时间" placeholder="请选择结束时间"/>
+                </div>
+            </div>
+		</div>
+		
+		<div class="d_content">
+			<h5 class="d_content_title">
+				<p class="d_rili">
+					<img src="img/calendar.png" />
+				</p>
+				<div class="d_p">
+					<p class="d_date">2016-01-18</p>
+					<p class="d_week">星期一</p>
+				</div>
+			</h5>
+			<div class="d_table">
+				<div class="d_title clearfix">
+					<div class="d_td_3"></div>
+					<div class="d_td_3">餐类</div>
+					<div class="d_td_3">员工餐厅</div>
+					<div class="d_td_3">高管餐厅</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<img class="d_fan" src="img/zaocan.png" />
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType staffMeal">员工餐</p>
+						<p class="mealType passengerMeal">&nbsp;&nbsp;&nbsp;&nbsp;客餐</p>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" id="we1" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<img class="d_fan" src="img/wucan.png" />
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType staffMeal">员工餐</p>
+						<p class="mealType passengerMeal">&nbsp;&nbsp;&nbsp;&nbsp;客餐</p>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<img class="d_fan" src="img/wancan.png" />
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType staffMeal">员工餐</p>
+						<p class="mealType passengerMeal">&nbsp;&nbsp;&nbsp;&nbsp;客餐</p>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="d_content">
+			<h5 class="d_content_title">
+				<p class="d_rili">
+					<img src="img/calendar.png" />
+				</p>
+				<div class="d_p">
+					<p class="d_date">2016-01-19</p>
+					<p class="d_week">星期二</p>
+				</div>
+			</h5>
+			<div class="d_table">
+				<div class="d_title clearfix">
+					<div class="d_td_3"></div>
+					<div class="d_td_3">餐类</div>
+					<div class="d_td_3">员工餐厅</div>
+					<div class="d_td_3">高管餐厅</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<img class="d_fan" src="img/zaocan.png" />
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType staffMeal">员工餐</p>
+						<p class="mealType passengerMeal">&nbsp;&nbsp;&nbsp;&nbsp;客餐</p>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<img class="d_fan" src="img/wucan.png" />
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType staffMeal">员工餐</p>
+						<p class="mealType passengerMeal">&nbsp;&nbsp;&nbsp;&nbsp;客餐</p>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="d_tr clearfix">
+					<div class="d_td d_td_3">
+						<img class="d_fan" src="img/wancan.png" />
+					</div>
+					<div class="d_td d_td_3">
+						<p class="mealType staffMeal">员工餐</p>
+						<p class="mealType passengerMeal">&nbsp;&nbsp;&nbsp;&nbsp;客餐</p>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="d_td d_td_3">
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+						<div class="mealCount count clearfix">
+							<p class="d_icon d_minus">
+								<a href="javascript:;" class="d_a minus">
+									<img src="img/minus.png" />
+								</a>
+							</p>
+							<p class="d_input">
+								<input type="number" class="weui-input" value="0" />
+							</p>
+							<p class="d_icon d_plus">
+								<a href="javascript:;" class="d_a plus">
+									<img src="img/plus.png"/>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="d_footer">
+			<a href="javascript:;" class="weui-btn weui-btn_primary" id="submit">提交订餐</a>
+		</div>
+		
+		<div class="d_footer">
+			<p class="tips">
+				提示：截止到取餐时间前一天的13：00，之后则不能修改！
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="dist/jquery-2.1.1.min.js" ></script>
+	<script type="text/javascript">
+		$('.plus').click(function(){
+	        var num = $(this).parents('.count').find('input[type="number"]').val();
+	        num++;
+	        $(this).parents('.count').find('input[type="number"]').val(num);
+	    });
+	    $('.minus').click(function(){
+	        var num = $(this).parents('.count').find('input[type="number"]').val();
+	        if(num > 0){
+	        	num--;
+	        }
+	        $(this).parents('.count').find('input[type="number"]').val(num);
+	    });
+	    
+	    $('#submit').click(function(){
+	    	alert($('#we1').val());
+	    })
+	</script>
+</html>
